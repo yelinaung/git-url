@@ -1,4 +1,4 @@
-git-url
+git-url[![Build Status](https://travis-ci.org/yelinaung/git-url.svg?branch=master)](https://travis-ci.org/yelinaung/git-url)
 =======
 
 Nothing awesome. A tiny tool to convert various remote URL of Git.
