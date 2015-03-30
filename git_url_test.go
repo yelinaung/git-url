@@ -16,10 +16,10 @@ func TestAreMenNamesRamdonOrNot(t *testing.T) {
 
 	assert.Equal(123, 123, "they should be equal")
 
-	ssh2http := SSH2Http(sshUrl)
+	ssh2http := Ssh2Http(sshUrl)
 	assert.Equal(ssh2http, httpUrl, "they should be equanl")
 
-	http2ssh := Http2SSH(httpUrl)
+	http2ssh := Http2Ssh(httpUrl)
 	assert.Equal(http2ssh, sshUrl, "they should be equanl")
 
 }

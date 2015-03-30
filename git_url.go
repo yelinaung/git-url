@@ -5,7 +5,7 @@ import (
 	str "strings"
 )
 
-func Http2SSH(httpUrl string) string {
+func Http2Ssh(httpUrl string) string {
 
 	userNameRepoPair := str.Split(httpUrl, "https://")[1]
 	tempPair := str.Split(userNameRepoPair, "/")
@@ -15,7 +15,7 @@ func Http2SSH(httpUrl string) string {
 	return fmt.Sprintf("git@github.com:%s/%s.git", userName, repoName)
 }
 
-func SSH2Http(sshUrl string) string {
+func Ssh2Http(sshUrl string) string {
 	// fmt.Printf("%s is http ? %t\n", sshUrl, str.Contains(sshUrl, http))
 
 	userNameRepoPair := str.Split(sshUrl, ":")[1]

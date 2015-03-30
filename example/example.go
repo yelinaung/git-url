@@ -1,12 +1,3 @@
-git-url
-=======
-
-Nothing awesome. A tiny tool to convert various remote URL of Git.
-
-Example
--------
-
-```go
 package main
 
 import (
@@ -21,8 +12,3 @@ func main() {
 	httpUrl := "https://github.com/yelinaung/git-url.git"
 	fmt.Println(giturl.Http2Ssh(httpUrl))
 }
-```
-
-License
--------
-MIT
