@@ -19,8 +19,6 @@ func Http2Ssh(httpUrl string) string {
 }
 
 func Ssh2Http(sshUrl string) string {
-	// fmt.Printf("%s is http ? %t\n", sshUrl, str.Contains(sshUrl, http))
-
 	hostRepoPair := str.Split(sshUrl, "@")[1]
 	host := str.Split(hostRepoPair, ":")[0]
 	userNameRepoPair := str.Split(hostRepoPair, ":")[1]
@@ -33,11 +31,3 @@ func Ssh2Http(sshUrl string) string {
 		return fmt.Sprintf("https://%s/%s/%s.git", host, userName, repoName)
 	}
 }
-
-//func main() {
-//	sshUrl := "git@github.com:yelinaung/git-url.git"
-//	fmt.Println(Ssh2Http(sshUrl))
-//
-//	httpUrl := "https://bitbucket.org/myname/myrepo.git"
-//	fmt.Println(Http2Ssh(httpUrl))
-//}
